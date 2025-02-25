@@ -1,0 +1,24 @@
+
+🔹 Disease Classification Evaluation:
+✅ Accuracy: 0.5711
+✅ Precision: 0.6191
+✅ Recall: 0.5711
+✅ F1-score: 0.5720
+
+🔹 Classification Report:
+                        precision    recall  f1-score   support
+
+        Bacterial Spot       0.40      0.84      0.55        43
+  Cercospora Leaf Spot       0.62      0.32      0.42        41
+           Common Rust       0.92      0.94      0.93        48
+          Early Blight       0.58      0.44      0.50        48
+               Healthy       0.86      0.50      0.63        96
+           Late Blight       0.45      0.49      0.47        47
+  Northern Leaf Blight       0.50      0.56      0.53        48
+    Septoria Leaf Spot       0.46      0.59      0.52        44
+Yellow Leaf Curl Virus       0.50      0.53      0.51        49
+
+              accuracy                           0.57       464
+             macro avg       0.59      0.58      0.56       464
+          weighted avg       0.62      0.57      0.57       464
+

@@ -1,0 +1,17 @@
+
+🔹 Model Evaluation:
+✅ Accuracy: 0.9030
+✅ Precision: 0.9061
+✅ Recall: 0.9030
+✅ F1-score: 0.9045
+
+🔹 Classification Report:
+              precision    recall  f1-score   support
+
+     Healthy       0.48      0.51      0.49        43
+    Diseased       0.95      0.94      0.95       421
+
+    accuracy                           0.90       464
+   macro avg       0.71      0.73      0.72       464
+weighted avg       0.91      0.90      0.90       464
+

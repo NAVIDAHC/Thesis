@@ -1,0 +1,15 @@
+🔹 Overall Model Performance:
+✅ Accuracy: 1.0000
+✅ Precision (weighted avg): 1.0000
+✅ Recall (weighted avg): 1.0000
+✅ F1-score (weighted avg): 1.0000
+
+🔹 Per-Class Performance:
+              precision    recall  f1-score   support
+
+     Healthy       1.00      1.00      1.00        43
+    Diseased       1.00      1.00      1.00       421
+
+    accuracy                           1.00       464
+   macro avg       1.00      1.00      1.00       464
+weighted avg       1.00      1.00      1.00       464
