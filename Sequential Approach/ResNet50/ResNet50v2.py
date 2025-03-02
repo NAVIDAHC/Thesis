@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 # Define dataset paths
 train_path = r"C:\Users\User\Desktop\ivan files\Thesis\Dataset\PlantVillage\Combined\Train"
 val_path = r"C:\Users\User\Desktop\ivan files\Thesis\Dataset\PlantVillage\Combined\Val"
-test_path = r"C:\Users\User\Desktop\ivan files\Thesis\Dataset\PlantVillage\Combined\Test"
+test_path = r"C:\Users\User\Desktop\ivan files\Thesis\Dataset\PlantDoc\Combined\Test"
 
 # Define image size for ResNet
 IMG_SIZE = (224, 224)
@@ -119,8 +119,8 @@ for epoch in range(epochs):
     print(f"Epoch {epoch+1}/{epochs}, Loss: {running_loss/len(train_loader):.4f}")
 
 # Save trained model
-torch.save(model2.state_dict(), "disease_classification_resnet.pth")
-print("✅ Model saved as 'disease_classification_resnet.pth'")
+torch.save(model2.state_dict(), "disease_classification_resnet_raw.pth")
+print("✅ Model saved as 'disease_classification_resnet_raw.pth'")
 
 # Function to predict disease
 def predict_disease(image):
@@ -153,7 +153,7 @@ f1 = f1_score(y_true, y_pred, average='weighted')
 report = classification_report(y_true, y_pred, target_names=label_encoder.classes_)
 
 # Save evaluation results (including per-class stats)
-with open("disease_resnet_pytorch_results.txt", "w", encoding="utf-8") as file:
+with open("disease_resnet_pytorch_results_raw.txt", "w", encoding="utf-8") as file:
     file.write(f"🔹 Overall Model Performance:\n")
     file.write(f"✅ Accuracy: {accuracy:.4f}\n")
     file.write(f"✅ Precision (weighted avg): {precision:.4f}\n")
@@ -173,7 +173,7 @@ print("\n🔹 Per-Class Performance:")
 print(report)
 
 
-print("✅ Evaluation results saved in 'disease_resnet_pytorch_results.txt'")
+print("✅ Evaluation results saved in 'disease_resnet_pytorch_results_raw.txt'")
 
 # Test a sample prediction
 sample_image = X_test[0].to(device)

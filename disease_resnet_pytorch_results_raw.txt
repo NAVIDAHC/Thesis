@@ -1,0 +1,22 @@
+🔹 Overall Model Performance:
+✅ Accuracy: 0.3038
+✅ Precision (weighted avg): 0.3782
+✅ Recall (weighted avg): 0.3038
+✅ F1-score (weighted avg): 0.3005
+
+🔹 Per-Class Performance:
+                        precision    recall  f1-score   support
+
+        Bacterial Spot       0.00      0.00      0.00         9
+  Cercospora Leaf Spot       0.10      0.50      0.16         4
+           Common Rust       0.67      0.20      0.31        10
+          Early Blight       0.21      0.56      0.30         9
+               Healthy       0.33      0.38      0.35         8
+           Late Blight       0.67      0.40      0.50        10
+  Northern Leaf Blight       0.62      0.42      0.50        12
+    Septoria Leaf Spot       0.38      0.27      0.32        11
+Yellow Leaf Curl Virus       0.00      0.00      0.00         6
+
+              accuracy                           0.30        79
+             macro avg       0.33      0.30      0.27        79
+          weighted avg       0.38      0.30      0.30        79
